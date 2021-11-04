@@ -15,8 +15,14 @@ class DefaultController extends Controller
     public function indexAction(Request $request)
     {
         $a = 123;
+        $someArray = [1, 2, 3];
+        $someValue = false;
 
-        return $this->render('default/index.html.twig', ['a' => $a]);
+        return $this->render('default/index.html.twig', [
+            'a' => $a,
+            'some_array' => $someArray,
+            'some_value' => $someValue
+        ]);
     }
 
     /**

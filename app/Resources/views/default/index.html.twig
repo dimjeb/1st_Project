@@ -2,6 +2,15 @@
 
 {% block body %}
 Hello World {{ a }}!
+<br>
+
+    {% if not some_value %}
+        {{ 'YES!!!' }}
+    {% endif %}
+
+    {% for key, some_item in some_array %}
+        {{ key }}-{{ some_item }} <br>
+    {% endfor %}
 {% endblock %}
 
 {% block stylesheets %}
